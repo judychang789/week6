@@ -1,0 +1,162 @@
+---
+title: 確認訂單
+layout: ./app/layout_2.ejs
+engine: ejs
+current: checkout_1
+---
+
+
+
+
+    <main class="main inmain">
+
+        <!-- <div class="container"></div> -->
+
+        <div class="checkoutBg">
+
+            <div class="container">
+
+                <!-- <h2>確認訂單</h2> -->
+
+                <div class="checkoutTop row">
+
+                    <!-- 訂單步驟 -->
+                    <ul class="checkoutStepArea list-unstyled col-12 col-lg-10 col-xxl-8">
+                        <li class="active">
+                            <span></span>
+                            確認訂單
+                        </li>
+                        <li>
+                            <span></span>
+                            填寫訂購資訊 
+                        </li>
+                        <li>
+                            <span></span>
+                            填寫付款資訊 
+                        </li>
+                        <li>
+                            <span></span>
+                            完成訂購 
+                        </li>
+                    </ul>
+                    
+                    <!-- 訂單區域 -->
+                    <div class="checkoutArea col-12 col-lg-10 col-xxl-8">
+                        <table class="table" >
+                            <!-- <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                            </thead> -->
+                            <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <img src="https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg">
+                                </th>
+                                <td class="information">
+                                    <h3>2020 台味設計展</h3>
+                                    <span>01 JUN — 31 OCT</span>
+                                    <span>全票<b class="num">1</b></span>
+                                    <div class="priceMob">NT$350</div>
+                                </td>
+                                <td class="price">
+                                    NT$350
+                                </td>
+
+                                <!-- 增加數量 -->
+                                <td class="">
+                                    <div class="quantityArea">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>                                    
+                                            <input type="text" value="1" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="close">
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">
+                                    <img src="https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg">
+                                </th>
+                                <td>
+                                    <h3>2020 台味設計展</h3>
+                                    <span>01 JUN — 31 OCT</span>
+                                    <span>全票</span>
+                                </td>
+                                <td class="price">
+                                    NT$350
+                                </td>
+
+                                <!-- 增加數量 -->
+                                <td class="">
+                                    <div class="quantityArea">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>                                    
+                                            <input type="text" value="1" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="close">
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">
+                                    <img src="https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg">
+                                </th>
+                                <td>
+                                    <h3>2020 台味設計展</h3>
+                                    <span>01 JUN — 31 OCT</span>
+                                    <span>全票</span>
+                                </td>
+                                <td class="price">
+                                    NT$350
+                                </td>
+
+                                <!-- 增加數量 -->
+                                <td class="">
+                                    <div class="quantityArea">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>                                    
+                                            <input type="text" value="1" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="close">
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+                <div class="checkoutBottom row">
+                    <!-- 小計區 -->
+                    <ul class="subtotalArea list-unstyled col-6 col-lg-4">
+                        <li>小計</li>
+                        <li>NT$1050</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-secondary next col-6 col-lg-4">下一步</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+

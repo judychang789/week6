@@ -1,0 +1,251 @@
+
+.inmain{
+    padding: 24px 0 40px;
+    border-top: 1px #707070 solid;
+}
+
+.checkoutTop{
+    padding: 0;
+    margin: 0;
+}
+//訂單步驟
+.checkoutStepArea{
+    display: flex;
+    align-items: center;
+    padding: 0 0 28px;
+    margin: 0;
+    li{
+        box-sizing: border-box;
+        width: 25%;
+        text-align: center;
+        font-size: $font-sl;
+        font-weight: bolder;
+        span{
+            display: inline-block;
+            background-color: $secondary;
+            width: 100%;
+            height: 2.5px;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                width: 8px;
+                height: 8px;
+                top: -2px;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                background-color: $secondary;
+                border-radius: 50%;
+                border: 1px $secondary solid;
+            }
+        }
+    }
+    li.active{
+        span{
+            &:before{
+                background-color:#fff;
+            }
+        }
+    }
+    //max-width: 768px
+    @include iPad(){
+        li{
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+// 訂單區域
+.checkoutArea{
+    padding: 0;
+    margin: 0;
+    .table{
+        tr{
+            border-color: white;
+            
+            th{
+                width: 160px;
+                padding: 0 0 20px;
+                vertical-align: middle;
+            }
+            td{
+                vertical-align: middle;
+                padding: 0 0 20px 15px;
+                border-color: #fff0;
+                &.price{
+                    font-size: $font-nl;
+                    font-weight: bolder;
+                }
+                &.close{
+                    padding-left: 104px;
+                    .btn-close{
+                        text-align: right;
+                        font-size:$font-sl;
+                        padding: 0px;
+                    }
+                }
+            } 
+            //max-width: 768px
+            @include iPad(){    
+                position: relative;
+                th{
+                    width: 50%;
+                    padding-right: 15px;
+                    vertical-align:top;
+                }
+                td{
+                    vertical-align:top;
+                    padding: 0 0;
+                    width: 50%;
+                    &.price{
+                        font-size: $font-nl;
+                        font-weight: bolder;
+                        display: none;
+                    }
+                    &.close{
+                        padding: 0px;
+                        position: absolute;
+                        right: 0;
+                        text-align: right;
+                        // .btn-close{
+                        //     text-align: right;
+                        //     font-size:$font-sl;
+                        //     padding: 0px;
+                        // }
+                    }
+                }
+            }           
+        }
+    }
+
+}
+
+// 增加數量
+.quantityArea{
+    font-size: $font-ml;
+    text-align: center;
+    height: 26px;
+    overflow: hidden;
+    .mb-3{
+        .btn-outline-secondary{
+            border-color: #6c757d00;
+            width: 24px;
+            padding: 0 !important;  
+            margin:0 !important;
+            text-align: center;
+        }
+        .form-control{
+            text-align: center;
+            border-color: #6c757d00;
+            width: 12px;  
+            padding: 0 !important;  
+            margin: 0 !important;  
+        }
+    }
+    //max-width: 768px
+    @include iPad(){    
+        display: none;
+    }
+}
+
+
+
+
+.checkoutArea{
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.information{
+    h3{
+        font-size: $font-ml;
+        margin: 0;
+        padding: 0 0 4px;
+    }
+    span{
+        font-weight: bolder;
+        display: block;
+        font-size: $font-sl;
+        &:nth-of-type(2){
+            color: #707070;
+            padding-top: 4px;
+            font-weight: normal;
+        }
+    }
+    .num{
+        display: none;
+    }
+    .priceMob{
+        display: none;
+    }
+    //max-width: 768px
+    @include iPad(){    
+        h3{
+            font-size:$font-sl;
+        }
+        span{
+            font-size:$font-sl;
+            &:nth-of-type(2){
+                display:inline-block;
+            }
+        }
+        .num{
+            display:inline-block;
+            font-size: $font-nl;
+            color: #000;
+        }
+        .priceMob{
+            display:inline-block;
+            font-size: $font-nl;
+            color: #000;
+            padding-left: 15px;
+        }
+    }
+}
+
+
+
+
+
+.checkoutBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+// 小計區
+.subtotalArea{
+    font-size: $font-nl;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 222px 0 14px;
+    margin: 0;
+    li{
+        text-align: right;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;        
+        &:first-of-type{
+            text-align: left;
+        }
+    }
+    //max-width: 768px
+    @include iPad(){   
+        padding:89px 0 14px;
+    }
+}
+.next{
+    background-color: $secondary;
+    border-color: $secondary;
+    font-size: $font-sl;
+    padding: 10px 0;
+}
